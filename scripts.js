@@ -3,6 +3,11 @@ $('#reset-btn').on('click', function(){
     $('tbody').empty()
 })
 
+$(document).ready( function(){
+    var defaultJD = 'rockstar ninja rockstar team product engineer growth mindset product'
+    wordFreq(defaultJD)
+})
+
 function scanJD() {
     event.preventDefault()
     var JDstring = $('#text').val().toLowerCase()
