@@ -3,14 +3,15 @@ $('#reset-btn').on('click', function(){
     $('tbody').empty()
 })
 
+var JDstring = 'rockstar rockstar ninja ninja rockstar team product engineer growth mindset product'
 $(document).ready( function(){
-    var defaultJD = 'rockstar ninja rockstar team product engineer growth mindset product'
-    wordFreq(defaultJD)
+    wordFreq(JDstring)
 })
 
 function scanJD() {
     event.preventDefault()
-    var JDstring = $('#text').val().toLowerCase()
+    $('#tablebod').empty();
+    JDstring = $('#text').val().toLowerCase()
     console.log(JDstring);
     
     wordFreq(JDstring)
