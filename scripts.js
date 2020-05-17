@@ -5,6 +5,7 @@ $('#reset-btn').on('click', function(){
 
 $(document).ready( function(){
     var defaultJD = 'rockstar ninja rockstar team product engineer growth mindset product'
+    
     wordFreq(defaultJD)
 })
 
